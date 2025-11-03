@@ -129,6 +129,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    const projectCards = document.querySelectorAll('.project-card[data-opens]');
+    projectCards.forEach(card => {
+        card.addEventListener('click', () => openWindow(card.dataset.opens));
+    });
+
     windows.forEach(win => {
         win.addEventListener('mousedown', () => focusWindow(win));
         win.querySelector('.close-btn').addEventListener('click', (e) => { e.stopPropagation(); closeWindow(win.id); });
@@ -223,15 +228,30 @@ document.addEventListener('DOMContentLoaded', () => {
         switch (cmd) {
             case 'help': response = `Available commands: help, whoami, ls, open [app], socials, contact, date, clear, exit`; break;
             case 'whoami': response = `User: Vedant Neve <br>Location: Pune, India`; break;
-            case 'ls': response = `about-me.txt/ projects/ academics/ certifications/ activities/ goals/ contact/`; break;
+            case 'ls': response = `about-me.txt/ projects/ workbench/ academics/ certs/ activities/ goals/ contact/ Reading.txt`; break;
             case 'open': 
                 const appName = args[0]?.replace('.txt','');
-                if (appName && document.getElementById(appName)) {
+                if (appName && (document.getElementById(appName) || ['workbench', 'library'].includes(appName))) {
                     openWindow(appName); 
                     response = `Opening ${appName}...`; 
                 } else { 
                     response = `bash: app not found: ${args[0]}. Try 'ls' to see available files.`; 
                 } 
+                break;
+            case 'status':
+                response = `Currently working on:<br>
+                        - Jerm: A high-performance terminal in modern Java.<br>
+                        - cuda-GL: GPU-accelerated graphics components with CUDA/OpenGL.`;
+                break;
+            case 'cat':
+                if (args[0] === 'reading.txt') {
+                    response = `Currently Reading:<br>
+                                1. Artificial Intelligence: A Modern Approach (Russell & Norvig)<br>
+                                2. Computer Networking: A Top-Down Approach (Kurose & Ross)<br>
+                                3. Introduction to Algorithms (CLRS)`;
+                } else {
+                    response = `cat: no such file: ${args[0]}. Did you mean 'cat Reading.txt'?`;
+                }
                 break;
             case 'socials': response = `GitHub: <a href="https://github.com/0bVdnt" target="_blank">github.com/0bVdnt</a><br>LinkedIn: <a href="https://linkedin.com/in/vedantneve" target="_blank">linkedin.com/in/vedantneve</a><br>X/Twitter: <a href="https://x.com/0bVdnt" target="_blank">x.com/0bVdnt</a><br>LeetCode: <a href="https://leetcode.com/u/0bVdnt" target="_blank">leetcode.com/u/0bVdnt</a>`; break;
             case 'contact': response = `Email: <a href="mailto:vedantneve13@gmail.com">vedantneve13@gmail.com</a>`; break;

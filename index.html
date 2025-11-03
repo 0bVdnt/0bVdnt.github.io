@@ -44,7 +44,7 @@
                 <span>About-Me</span>
             </div>
             <div class="desktop-icon" data-opens="projects">
-                <img src="assets/projects.png" class="icon-image" alt="Projects folder icon">
+                <img src="assets/projects.gif" class="icon-image" alt="Projects folder icon">
                 <span>Projects</span>
             </div>
             <div class="desktop-icon" data-opens="academics">
@@ -83,22 +83,32 @@
                 <img src="assets/leetcode.png" class="icon-image" alt="LeetCode logo">
                 <span>LeetCode</span>
             </a>
+            
+            <div class="desktop-icon" data-opens="workbench">
+                <img src="assets/workbench.png" class="icon-image" alt="Workbench icon">
+                <span>Workbench</span>
+            </div>
+
+            <div class="desktop-icon" data-opens="library">
+                <img src="assets/library.gif" class="icon-image" alt="Library icon">
+                <span>Reading.txt</span>
+            </div>
         </div>
 
         <div class="widget-container">
             <div class="widget">
                 <h3>PROFILE</h3>
-                <p>CS student passionate about low-level systems, compilers & ML. Seeking an internship to apply skills in compiler design, OS, and game development.</p>
+                <p>I'm a computer science engineer who builds technology from first principles—from custom OS kernels and compilers with LLVM to GPU-accelerated graphics, full-stack web applications and AI models.</p>
             </div>
             <div class="widget">
                 <h3>CORE STACK</h3>
                 <ul class="widget-list-stack">
-                    <li>C / C++</li>
-                    <li>Rust</li>
-                    <li>Python</li>
-                    <li>Compilers</li>
+                    <li>C / C++ / Rust / Java</li>
+                    <li>LLVM & Compilers</li>
+                    <li>PyTorch & AI Models</li>
+                    <li>CUDA & Graphics Programming</li>
                     <li>Operating Systems</li>
-                    <li>WebAssembly</li>
+                    <li>JS / TS and Frameworks</li>
                 </ul>
             </div>
             <div class="widget">
@@ -148,21 +158,36 @@
         <div class="window-body">
             <h2>My Work</h2>
             <div class="project-grid">
-                <a href="https://github.com/0bVdnt/GameOfLife-WebAssembly" target="_blank" class="project-card">
+                <div class="project-card" data-opens="proj-chakravyuha">
+                    <div class="thumbnail" style="background-image: url('assets/chakravyuha_thumb.png')"></div>
+                    <h3>Chakravyuha Obfuscator</h3>
+                    <p>An intelligent C/C++ obfuscation engine using the LLVM framework to protect software from reverse engineering.</p>
+                </div>
+                <div class="project-card" data-opens="proj-gameoflife-wasm">
                     <div class="thumbnail" style="background-image: url('assets/game_of_life_wasm.gif')"></div>
                     <h3>GameOfLife-Wasm</h3>
                     <p>Conway's Game of Life in C++, compiled to WebAssembly for near-native performance in the browser.</p>
-                </a>
-                <a href="https://github.com/0bVdnt/obvcc" target="_blank" class="project-card">
+                </div>
+                <div class="project-card" data-opens="proj-obvcc">
                     <div class="thumbnail" style="background-image: url('assets/obvcc.png')"></div>
                     <h3>obvcc Compiler</h3>
                     <p>A simple compiler for a subset of C, featuring a full pipeline from lexical analysis to assembly code generation.</p>
-                </a>
-                <a href="https://github.com/0bVdnt/obv-OS" target="_blank" class="project-card">
+                </div>
+                <div class="project-card" data-opens="proj-obv-os">
                     <div class="thumbnail" style="background-image: url('assets/obv-os.png')"></div>
                     <h3>obv-OS</h3>
                     <p>A minimal, bootable 32-bit kernel built from scratch for the RISC-V architecture, running in a QEMU VM.</p>
-                </a>
+                </div>
+                <div class="project-card" data-opens="proj-katha-gpt">
+                    <div class="thumbnail" style="background-image: url('assets/katha-gpt_thumb.png')"></div>
+                    <h3>katha-gpt</h3>
+                    <p>A ~50M parameter language model built from scratch in PyTorch to generate stories in the Marathi language.</p>
+                </div>
+                <div class="project-card" data-opens="proj-paywiz">
+                    <div class="thumbnail" style="background-image: url('assets/paywiz_thumb.png')"></div>
+                    <h3>PayWiz Payments App</h3>
+                    <p>A full-stack payments application built with the MERN stack (MongoDB, Express, React, Node.js), demonstrating industry-standard API design and application architecture.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -180,19 +205,21 @@
             <div class="avatar"></div>
             <h2>Vedant Neve</h2>
             <p>
-                <strong>Roll No:</strong> RBT23CB024 <br>
-                <strong>Department:</strong> Computer Science and Business Systems <br>
-                <strong>Year:</strong> B.Tech Third Year
+                Pre Final Year student at JSPM's Rajarshi Shahu College of Engineering.
+                <br>
+                Computer Science and Business Systems undergrad with a minor in Automation and Robotics.
             </p>
             <h3>Career Objective</h3>
             <p>
-                A detail-oriented Computer Science student interested in low-level systems, compiler design, machine learning and developing fast and reliable systems. Passionate about building efficient and robust software from the ground up. Seeking a challenging software engineering internship to apply skills in compiler design, machine learning, operating systems, game development and computer architecture.
+                My career objective is to engineer the fundamental systems that power modern technology. I'm driven by a passion for building from first principles, whether that means writing a kernel for a custom OS, designing a compiler with LLVM, or implementing an AI language model from scratch in PyTorch. I thrive on the challenge of understanding and architecting complex, performant, and reliable software.
+
+                I am seeking a challenging software engineering internship at a company that values deep technical expertise and innovation, where I can contribute to ambitious projects in systems programming, compiler engineering, applied AI, Full Stack Development or high-performance computing.
             </p>
             <h3>Technical Skills</h3>
             <p>
-               <b>Languages:</b> C, C++, Java, JavaScript, Python, Rust, OCaml, Odin.<br>
-               <b>Frameworks & Engines:</b> Unity, Unreal Engine, Node.js, Express.js, Raylib, React.js.<br>
-               <b>Developer Tools:</b> Git, GitHub, VS Code, QEMU, Emscripten.
+                <b>Languages:</b> C, C++, Rust, Python, Java, OCaml, Odin, Javascript, Typescript.<br>
+                <b>Frameworks & Technologies:</b> LLVM, PyTorch, CUDA, OpenGL, Raylib, Node.js, React.js, Express.js, PostgreSQL, MongoDB, Prisma, Project Loom, WebAssembly, QEMU.<br>
+                <b>Developer Tools:</b> Git, GitHub, GitLab, Docker, Dune, Cargo, Maven, Emscripten, Vim, Neovim, Unix, VS Code, Visual Studio, IntelliJ IDEA, Unreal Engine.
             </p>
         </div>
     </div>
@@ -277,7 +304,7 @@
         <div class="window-body">
             <h2>Co-curricular & Extra-curricular</h2>
             <ul>
-                <li><b>Data Structures & Algorithms Coordinator:</b> Google Developer Group, RSCOE</li>
+                <li><b>DSA and CP Co-Lead:</b> Google Developer Group on Campus RSCOE - Guided students of Second Year about the importance of Competive Programming and DSA in an introduction session. </li>
                 <li><b>Business Lead:</b> TechHawks RSCOE - Organized Several College level events, played roles in managing the event and handling finances throughout the events</li>
                 <li><b>Core Member:</b> Competitive Coding Club, RSCOE - Arranged Competitive Programming Contests and Contest discussions promoting juniors to start doing/get better at competitive programming / DSA</li>
                 <li><b>Core Member:</b> Algorand Blockchain Club, RSCOE - Attended various meetups and sessions organized by algorand community</li>
@@ -328,6 +355,329 @@
                 <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
+        </div>
+    </div>
+
+    <div class="window" id="workbench" style="width: 600px; height: 400px;">
+        <div class="title-bar">
+            <span class="title-bar-text">C:\Workbench</span>
+            <div class="title-bar-controls">
+                <button class="minimize-btn">_</button>
+                <button class="maximize-btn">□</button>
+                <button class="close-btn">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h2>The Forge: What I'm Building Now</h2>
+            <p>These are the projects currently on my workbench. They represent my ongoing exploration into new technologies and complex challenges.</p>
+
+            <div data-opens="proj-jerm" class="project-card">
+                <div class="thumbnail" style="background-image: url('assets/jerm_thumb.png')"></div>
+                <h3>Jerm Terminal</h3>
+                <p>A high-performance, cross-platform terminal in modern Java (JDK 21+) using Project Loom for div highly concurrent, non-blocking UI.</p>
+            </div>
+
+            <div data-opens="proj-cuda-gl" class="project-card">
+                <div class="thumbnail" style="background-image: url('assets/cudagl_thumb.png')"></div>
+                <h3>cuda-GL</h3>
+                <p>Diving into parallel computing by building GPU-accelerated graphics components with CUDA and OpenGL.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="library" style="width: 500px; height: 350px;">
+        <div class="title-bar">
+            <span class="title-bar-text">Reading.txt - Notepad</span>
+            <div class="title-bar-controls">
+                <button class="minimize-btn">_</button>
+                <button class="maximize-btn">□</button>
+                <button class="close-btn">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h2>Intellectual Curiosity</h2>
+            <p>Great software is built on a solid foundation of theory. I'm currently working my way through these classics:</p>
+            <ul>
+                <li><b>Artificial Intelligence: A Modern Approach</b> by Stuart Russell and Peter Norvig</li>
+                <li><b>Computer Networking: A Top-Down Approach</b> by James Kurose and Keith Ross</li>
+                <li><b>Introduction to Algorithms (CLRS)</b> by Cormen, Leiserson, Rivest, and Stein</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="window project-detail-window" id="proj-chakravyuha" style="width: 700px; height: 550px;">
+        <div class="title-bar">
+            <span class="title-bar-text">Project: Chakravyuha</span>
+            <div class="title-bar-controls">
+                <button class="minimize-btn">_</button>
+                <button class="maximize-btn">□</button>
+                <button class="close-btn">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h2>Chakravyuha: LLVM Obfuscation Engine</h2>
+            <p>
+                Chakravyuha is an intelligent, adaptive C/C++ obfuscation engine built on the LLVM compiler framework. It protects software intellectual property from reverse engineering and tampering by injecting sophisticated, layered code transformations directly into the compilation pipeline.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Integrates directly with LLVM's pass manager for seamless compilation.</li>
+                <li>Implements multiple obfuscation techniques like bogus control flow and instruction substitution.</li>
+                <li>Designed to be context-aware, applying transformations intelligently to minimize performance overhead.</li>
+            </ul>
+            <h3>Tech Stack:</h3>
+            <div class="tech-stack">
+                <span class="tech-badge c-plus-plus">C++</span>
+                <span class="tech-badge llvm">LLVM</span>
+                <span class="tech-badge cmake">CMake</span>
+                <span class="tech-badge systems">Systems Programming</span>
+            </div>
+            <a href="https://github.com/0bVdnt/POC-Chakravyuha.git" class="github-button" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                View on GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="window project-detail-window" id="proj-katha-gpt" style="width: 700px; height: 550px;">
+        <div class="title-bar">
+            <span class="title-bar-text">Project: katha-gpt</span>
+            <div class="title-bar-controls">
+                <button class="minimize-btn">_</button>
+                <button class="maximize-btn">□</button>
+                <button class="close-btn">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h2>katha-gpt: Generative AI Language Model</h2>
+            <p>
+                katha-gpt is a generative language model with ~50 million parameters, built entirely from scratch based on the GPT-2 architecture. The entire machine learning pipeline—from the custom BPE tokenizer and data pre-processing to the training loop and inference logic—was implemented in PyTorch. The model is trained on a custom dataset to generate coherent, original stories in the Marathi language from a user prompt.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Full implementation of the GPT-2 architecture, including multi-head self-attention.</li>
+                <li>Custom Byte-Pair Encoding (BPE) tokenizer built from the ground up.</li>
+                <li>Demonstrates end-to-end ownership of a deep learning project from theory to implementation.</li>
+            </ul>
+            <h3>Tech Stack:</h3>
+            <div class="tech-stack">
+                <span class="tech-badge pytorch">PyTorch</span>
+                <span class="tech-badge python">Python</span>
+                <span class="tech-badge ai-ml">AI/ML</span>
+                <span class="tech-badge nlp">NLP</span>
+            </div>
+            <a href="https://github.com/0bVdnt/katha-gpt" class="github-button" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                View on GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="window project-detail-window" id="proj-obv-os" style="width: 700px; height: 550px;">
+        <div class="title-bar">
+            <span class="title-bar-text">Project: obv-OS</span>
+            <div class="title-bar-controls">
+                <button class="minimize-btn">_</button>
+                <button class="maximize-btn">□</button>
+                <button class="close-btn">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h2>obv-OS: A Kernel from Scratch</h2>
+            <p>
+                obv-OS is a minimal, bootable 32-bit operating system kernel designed for the RISC-V architecture. This project was an exercise in understanding the absolute fundamentals of computing, from bootloading and memory management to interacting directly with hardware via inline assembly. The kernel runs in a QEMU virtual machine.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Built entirely from scratch, with no external OS libraries.</li>
+                <li>Uses a combination of C and inline assembly (`__asm__`) for low-level control.</li>
+                <li>Targets the popular RISC-V ISA, a modern instruction set architecture for learning.</li>
+            </ul>
+            <h3>Tech Stack:</h3>
+            <div class="tech-stack">
+                <span class="tech-badge c-lang">C</span>
+                <span class="tech-badge assembly">Assembly</span>
+                <span class="tech-badge systems">Systems Programming</span>
+                <span class="tech-badge qemu">QEMU</span>
+                <span class="tech-badge risc-v">RISC-V</span>
+            </div>
+            <a href="https://github.com/0bVdnt/obv-OS.git" class="github-button" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                View on GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="window project-detail-window" id="proj-obvcc" style="width: 700px; height: 550px;">
+        <div class="title-bar">
+            <span class="title-bar-text">Project: obvcc</span>
+            <div class="title-bar-controls">
+                <button class="minimize-btn">_</button>
+                <button class="maximize-btn">□</button>
+                <button class="close-btn">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h2>obvcc: A Minimal C Compiler</h2>
+            <p>
+                obvcc is a multi-stage compiler that transforms a minimal, C-like language into platform-aware x64 assembly. The entire pipeline, including a lexer, parser, assembly generator, and code emitter, was built from scratch. This project provided a deep, hands-on understanding of language design, parsing theory, and code generation.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Complete, end-to-end compiler pipeline implemented in OCaml and Rust.</li>
+                <li>Platform-aware code generation for x64 assembly.</li>
+                <li>Demonstrates a strong grasp of compiler construction principles.</li>
+            </ul>
+            <h3>Tech Stack:</h3>
+            <div class="tech-stack">
+                <span class="tech-badge rust">Rust</span>
+                <span class="tech-badge ocaml">OCaml</span>
+                <span class="tech-badge compilers">Compiler Design</span>
+                <span class="tech-badge systems">Systems Programming</span>
+            </div>
+            <a href="https://github.com/0bVdnt/obvcc.git" class="github-button" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                View on GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="window project-detail-window" id="proj-paywiz" style="width: 700px; height: 550px;">
+        <div class="title-bar">
+            <span class="title-bar-text">Project: PayWiz</span>
+            <div class="title-bar-controls">
+                <button class="minimize-btn">_</button>
+                <button class="maximize-btn">□</button>
+                <button class="close-btn">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h2>PayWiz: Full-Stack Payments Application</h2>
+            <p>
+                PayWiz is a complete, full-stack payments application built using the MERN stack. It simulates a basic peer-to-peer wallet, allowing users to sign up, manage their balance, and send money to other users. The project emphasizes a clean, maintainable, and secure architecture, featuring a RESTful API backend and a responsive React frontend.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Secure user authentication and authorization using JSON Web Tokens (JWT).</li>
+                <li>Robust backend API with atomic database transactions for safe balance transfers.</li>
+                <li>Modern, component-based frontend built with React.js, following industry best practices.</li>
+            </ul>
+            <h3>Tech Stack:</h3>
+            <div class="tech-stack">
+                <span class="tech-badge react">React.js</span>
+                <span class="tech-badge node">Node.js</span>
+                <span class="tech-badge express">Express.js</span>
+                <span class="tech-badge mongodb">MongoDB</span>
+                <span class="tech-badge javascript">JavaScript</span>
+                <span class="tech-badge full-stack">Full-Stack</span>
+            </div>
+            <a href="https://github.com/0bVdnt/PayWiz.git" class="github-button" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                View on GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="window project-detail-window" id="proj-jerm" style="width: 700px; height: 550px;">
+        <div class="title-bar">
+            <span class="title-bar-text">Project: Jerm</span>
+            <div class="title-bar-controls">
+                <button class="minimize-btn">_</button>
+                <button class="maximize-btn">□</button>
+                <button class="close-btn">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h2>Jerm: High-Performance Terminal</h2>
+            <p>
+                Jerm is a high-performance, cross-platform terminal application built from scratch using modern Java (JDK 21+). The application provides a unified Text-based User Interface (TUI) for executing commands on native shells (PowerShell, Bash, etc.). The core architecture leverages Java's Virtual Threads (Project Loom) for highly concurrent, non-blocking I/O, ensuring a responsive and efficient UI.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Modern concurrency model using Java Virtual Threads for superior performance.</li>
+                <li>Decoupled, interface-driven design for high maintainability and extensibility.</li>
+                <li>Professional-grade tooling with Maven for dependency management and SLF4J for logging.</li>
+            </ul>
+            <h3>Tech Stack:</h3>
+            <div class="tech-stack">
+                <span class="tech-badge java">Java 21+</span>
+                <span class="tech-badge loom">Project Loom</span>
+                <span class="tech-badge maven">Maven</span>
+                <span class="tech-badge systems">Systems Programming</span>
+            </div>
+            <a href="https://github.com/0bVdnt/Jerm.git" class="github-button" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                View on GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="window project-detail-window" id="proj-cuda-gl" style="width: 700px; height: 550px;">
+        <div class="title-bar">
+            <span class="title-bar-text">Project: cuda-GL</span>
+            <div class="title-bar-controls">
+                <button class="minimize-btn">_</button>
+                <button class="maximize-btn">□</button>
+                <button class="close-btn">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h2>cuda-GL: GPU Accelerated Graphics</h2>
+            <p>
+                This project is a deep dive into high-performance, parallel computing by building graphics components from scratch. It leverages the raw power of NVIDIA's CUDA platform for general-purpose GPU computations and OpenGL for rendering. The goal is to explore the synergy between the two technologies for creating real-time, computationally intensive visual applications.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Directly explores GPGPU (General-Purpose GPU) programming with CUDA.</li>
+                <li>Integrates CUDA compute kernels with an OpenGL rendering pipeline.</li>
+                <li>Focuses on performance and understanding the modern graphics pipeline.</li>
+            </ul>
+            <h3>Tech Stack:</h3>
+            <div class="tech-stack">
+                <span class="tech-badge cuda">CUDA</span>
+                <span class="tech-badge opengl">OpenGL</span>
+                <span class="tech-badge c-plus-plus">C++</span>
+                <span class="tech-badge hpc">HPC</span>
+            </div>
+            <a href="https://github.com/0bVdnt/cuda-GL.git" class="github-button" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                View on GitHub
+            </a>
+        </div>
+    </div>
+
+    <div class="window project-detail-window" id="proj-gameoflife-wasm" style="width: 700px; height: 550px;">
+        <div class="title-bar">
+            <span class="title-bar-text">Project: GameOfLife-Wasm</span>
+            <div class="title-bar-controls">
+                <button class="minimize-btn">_</button>
+                <button class="maximize-btn">□</button>
+                <button class="close-btn">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h2>Game of Life in WebAssembly</h2>
+            <p>
+                This project is a high-performance implementation of Conway's Game of Life that runs directly in the browser. The core simulation logic is written in C++ and then compiled to WebAssembly (Wasm) using the Emscripten toolchain. This approach allows for computationally-intensive logic to execute at near-native speeds, far surpassing what is possible with standard JavaScript.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+                <li>Leverages WebAssembly to run C++ code in the browser for maximum performance.</li>
+                <li>JavaScript acts as a lightweight controller, interacting with the high-speed Wasm module.</li>
+                <li>Demonstrates manual memory management in C++ for the simulation grid to optimize speed.</li>
+            </ul>
+            <h3>Tech Stack:</h3>
+            <div class="tech-stack">
+                <span class="tech-badge c-plus-plus">C++</span>
+                <span class="tech-badge wasm">WebAssembly</span>
+                <span class="tech-badge emscripten">Emscripten</span>
+                <span class="tech-badge javascript">JavaScript</span>
+                <span class="tech-badge performance">Performance</span>
+            </div>
+            <a href="https://github.com/0bVdnt/GameOfLife-WebAssembly" class="github-button" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                View on GitHub
+            </a>
         </div>
     </div>
 

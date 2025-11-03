@@ -499,6 +499,7 @@ a.project-card {
     text-align: center;
     text-decoration: none;
     color: var(--font-color);
+    cursor: pointer;
 }
 a.project-card:hover {
     transform: translateY(-5px);
@@ -515,6 +516,79 @@ a.project-card:hover {
     background-size: cover;
     background-position: center;
 }
+
+.project-detail-window .window-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-detail-window h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: var(--green-glow);
+}
+
+.project-detail-window ul {
+    list-style-position: inside;
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.tech-badge {
+    background-color: var(--primary);
+    color: var(--font-color);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-family: 'Fira Code', monospace;
+    font-size: 14px;
+    border: 1px solid var(--blue-glow);
+    transition: all 0.2s ease;
+}
+
+.tech-badge.c-plus-plus { border-color: #00599C; }
+.tech-badge.llvm { border-color: #ff4500; color: #ff4500; }
+.tech-badge.react { border-color: #61DAFB; color: #61DAFB; }
+.tech-badge.pytorch { border-color: #EE4C2C; color: #EE4C2C; }
+.tech-badge.systems { border-color: var(--green-glow); }
+
+
+.github-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #fff;
+    color: #000;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: auto; /* Pushes the button to the bottom */
+    align-self: center; /* Centers it horizontally */
+    min-width: 200px;
+    transition: transform 0.2s ease;
+}
+
+.github-button:hover {
+    transform: scale(1.05);
+}
+
+.github-button svg {
+    width: 24px;
+    height: 24px;
+    fill: #000;
+}
+
 .project-card h3 { font-size: 16px; margin-bottom: 5px; color: var(--green-glow); }
 .project-card p { font-size: 12px; line-height: 1.4; }
 
