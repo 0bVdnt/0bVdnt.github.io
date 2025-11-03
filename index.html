@@ -1,104 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vedant Neve | Portfolio</title>
+    <meta name="theme-color" content="#11111b">
+    <meta name="color-scheme" content="dark">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="icon"
+        href="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23cba6f7'/%3E%3Cstop offset='1' stop-color='%2374c7ec'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='12' fill='url(%23g)'/%3E%3Ctext x='50%' y='56%' text-anchor='middle' font-family='monospace' font-size='34' fill='white'%3E%3E_%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div id="boot-screen">
-    <pre>
+    <div id="boot-screen" aria-live="polite">
+        <pre>
 ██╗   ██╗███████╗██████╗  █████╗ ███╗   ██╗████████╗    ███╗   ██╗███████╗██╗   ██╗███████╗
 ██║   ██║██╔════╝██╔══██╗██╔══██╗████╗  ██║╚══██╔══╝    ████╗  ██║██╔════╝██║   ██║██╔════╝
 ██║   ██║█████╗  ██║  ██║███████║██╔██╗ ██║   ██║       ██╔██╗ ██║█████╗  ██║   ██║█████╗  
 ╚██╗ ██╔╝██╔══╝  ██║  ██║██╔══██║██║╚██╗██║   ██║       ██║╚██╗██║██╔══╝  ╚██╗ ██╔╝██╔══╝  
  ╚████╔╝ ███████╗██████╔╝██║  ██║██║ ╚████║   ██║       ██║ ╚████║███████╗ ╚████╔╝ ███████╗
   ╚═══╝  ╚══════╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝       ╚═╝  ╚═══╝╚══════╝  ╚═══╝  ╚══════╝
-                            ObvOS BIOS v1.0
-                            Copyright (C) 2025, Obv Creations.
-
-                            Initializing System...
-                            Memory Check: 640KB OK
-                            Loading Kernel... [▓▓▓▓▓▓▓▓▓▓] 100%
-                            Mounting File Systems... Done.
-                            Starting Services...
-                            ...
-                            Welcome to ObvOS
+  ObvOS BIOS v1.0
+  Initializing System...
+  Memory Check: 640KB OK
+  Loading Kernel... [▓▓▓▓▓▓▓▓▓▓] 100%
+  Mounting File Systems... Done.
+  Starting Services...
+  ...
+  Welcome to ObvOS
 </pre>
 </div>
 
-    <div class="desktop">
-        <div class="icon-grid">
-            <div class="desktop-icon" data-opens="obvterm">
+<div class="desktop">
+    <div class="icon-grid" role="list">
+        <div class="desktop-icon" data-opens="obvterm" role="button" aria-label="Open 0bV-Term" tabindex="0">
                 <img src="assets/terminal.webp" class="icon-image" alt="Terminal icon">
                 <span>0bV-Term</span>
             </div>
-            <div class="desktop-icon" data-opens="about-me">
-                <img src="assets/me.gif" class="icon-image" alt="Pixel art avatar of Vedant Neve">
+            
+            <div class="desktop-icon" data-opens="about-me" role="button" aria-label="Open About Me" tabindex="0">
+                <img src="assets/me.gif" class="icon-image" alt="About Me icon">
                 <span>About-Me</span>
             </div>
-            <div class="desktop-icon" data-opens="projects">
+            
+            <div class="desktop-icon" data-opens="projects" role="button" aria-label="Open Projects" tabindex="0">
                 <img src="assets/projects.gif" class="icon-image" alt="Projects folder icon">
                 <span>Projects</span>
             </div>
-            <div class="desktop-icon" data-opens="academics">
+            
+            <div class="desktop-icon" data-opens="cp-stats" role="button" aria-label="Open CP Stats" tabindex="0">
+                <img src="assets/cp_stats.gif" class="icon-image" alt="Competitive Programming Stats">
+                <span>CP-Stats</span>
+            </div>
+            
+            <a class="desktop-icon" href="https://leetcode.com/u/0bVdnt" target="_blank" rel="noopener"
+            aria-label="Open LeetCode">
+            <img src="assets/leetcode.png" class="icon-image" alt="LeetCode">
+                <span>LeetCode</span>
+            </a>
+
+            <div class="desktop-icon" data-opens="library" role="button" aria-label="Open Reading.txt" tabindex="0">
+                <img src="assets/library.gif" class="icon-image" alt="Library icon">
+                <span>Reading.txt</span>
+            </div>
+            
+            <div class="desktop-icon" data-opens="academics" role="button" aria-label="Open Academics" tabindex="0">
                 <img src="assets/academics.png" class="icon-image" alt="Academics icon">
                 <span>Academics</span>
             </div>
-             <div class="desktop-icon" data-opens="certifications">
-                <img src="assets/certs.png" class="icon-image" alt="Certifications icon">
-                <span>Certs</span>
-            </div>
-            <div class="desktop-icon" data-opens="activities">
+            
+            <div class="desktop-icon" data-opens="certifications" role="button" aria-label="Open Certifications"
+            tabindex="0">
+            <img src="assets/certs.png" class="icon-image" alt="Certifications icon">
+            <span>Certs</span>
+        </div>
+        
+            <div class="desktop-icon" data-opens="activities" role="button" aria-label="Open Activities" tabindex="0">
                 <img src="assets/extraCurr.png" class="icon-image" alt="Activities icon">
                 <span>Activities</span>
             </div>
-            <div class="desktop-icon" data-opens="goals">
+
+            <div class="desktop-icon" data-opens="goals" role="button" aria-label="Open Goals" tabindex="0">
                 <img src="assets/goals.png" class="icon-image" alt="Goals icon">
                 <span>Goals</span>
             </div>
-             <div class="desktop-icon" data-opens="contact">
+
+            <div class="desktop-icon" data-opens="contact" role="button" aria-label="Open Contact" tabindex="0">
                 <img src="assets/contact-me.png" class="icon-image" alt="Contact Me icon">
                 <span>Contact</span>
             </div>
-            <a class="desktop-icon" href="https://drive.google.com/file/d/1AXKKNJery1O_8104KShRuHgAwvKbUCtb/" target="_blank">
+
+            <a class="desktop-icon" href="https://drive.google.com/file/d/1AXKKNJery1O_8104KShRuHgAwvKbUCtb/"
+                target="_blank" rel="noopener" aria-label="Open Resume.pdf">
                 <img src="assets/resume.png" class="icon-image" alt="Resume document icon">
                 <span>Resume.pdf</span>
             </a>
-            <a class="desktop-icon" href="https://github.com/0bVdnt" target="_blank">
+
+            <a class="desktop-icon" href="https://github.com/0bVdnt" target="_blank" rel="noopener"
+                aria-label="Open GitHub">
                 <img src="assets/github-octopuss.gif" class="icon-image" alt="GitHub Octocat logo animation">
                 <span>GitHub</span>
             </a>
-            <a class="desktop-icon" href="https://linkedin.com/in/vedantneve" target="_blank">
+
+            <a class="desktop-icon" href="https://linkedin.com/in/vedantneve" target="_blank" rel="noopener"
+                aria-label="Open LinkedIn">
                 <img src="assets/linkedin.gif" class="icon-image" alt="LinkedIn logo animation">
                 <span>LinkedIn</span>
             </a>
-            <a class="desktop-icon" href="https://leetcode.com/u/0bVdnt" target="_blank">
-                <img src="assets/leetcode.png" class="icon-image" alt="LeetCode logo">
-                <span>LeetCode</span>
-            </a>
-            
-            <div class="desktop-icon" data-opens="workbench">
+
+
+            <div class="desktop-icon" data-opens="workbench" role="button" aria-label="Open Workbench" tabindex="0">
                 <img src="assets/workbench.png" class="icon-image" alt="Workbench icon">
                 <span>Workbench</span>
             </div>
 
-            <div class="desktop-icon" data-opens="library">
-                <img src="assets/library.gif" class="icon-image" alt="Library icon">
-                <span>Reading.txt</span>
-            </div>
+
         </div>
 
-        <div class="widget-container">
+        <div class="widget-container" aria-label="Profile and quick links">
             <div class="widget">
                 <h3>PROFILE</h3>
-                <p>I'm a computer science engineer who builds technology from first principles—from custom OS kernels and compilers with LLVM to GPU-accelerated graphics, full-stack web applications and AI models.</p>
+                <p>I'm a computer science engineer who builds technology from first principles—from custom OS kernels
+                    and compilers with LLVM to GPU-accelerated graphics, full-stack web applications and AI models.</p>
             </div>
             <div class="widget">
                 <h3>CORE STACK</h3>
@@ -114,45 +143,52 @@
             <div class="widget">
                 <h3>QUICK LINKS</h3>
                 <ul class="widget-list-links">
-                    <li><a href="https://github.com/0bVdnt" target="_blank">GitHub</a></li>
-                    <li><a href="https://linkedin.com/in/vedantneve" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://leetcode.com/u/0bVdnt" target="_blank">LeetCode</a></li>
-                    <li><a href="https://drive.google.com/file/d/1AXKKNJery1O_8104KShRuHgAwvKbUCtb/" target="_blank">Resume.pdf</a></li>
+                    <li><a href="https://github.com/0bVdnt" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://linkedin.com/in/vedantneve" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://leetcode.com/u/0bVdnt" target="_blank" rel="noopener">LeetCode</a></li>
+                    <li><a href="https://drive.google.com/file/d/1AXKKNJery1O_8104KShRuHgAwvKbUCtb/" target="_blank"
+                            rel="noopener">Resume.pdf</a></li>
                     <li><a href="mailto:vedantneve13@gmail.com">Email Me</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <div class="window" id="obvterm" style="width: 700px; height: 400px;">
+    <div class="window" id="obvterm" style="width: 700px; height: 400px;" aria-label="Terminal window">
         <div class="title-bar">
             <span class="title-bar-text">ObvTerm</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
-            <div class="terminal-output"></div>
+            <div class="terminal-output" aria-live="polite"></div>
+
+            <div class="terminal-hints" aria-hidden="true">
+                ↑/↓ history • Tab autocomplete • Ctrl+L clear • Ctrl+U erase line • Ctrl+A/E home/end
+            </div>
+
             <div class="terminal-prompt">
                 <span class="prompt-text">user@obvOS:~$ </span>
                 <div class="input-area">
-                    <span class="input-sizer"></span>
-                    <input type="text" class="terminal-input" autofocus>
+                    <span class="input-before"></span>
+                    <input type="text" class="terminal-input" aria-label="Terminal input" autofocus>
                     <span class="caret"></span>
+                    <span class="input-after"></span>
                 </div>
             </div>
         </div>
     </div>
-    
+
     <div class="window" id="projects" style="width: 600px; height: 450px;">
         <div class="title-bar">
             <span class="title-bar-text">C:\Projects</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
@@ -161,32 +197,38 @@
                 <div class="project-card" data-opens="proj-chakravyuha">
                     <div class="thumbnail" style="background-image: url('assets/chakravyuha_thumb.png')"></div>
                     <h3>Chakravyuha Obfuscator</h3>
-                    <p>An intelligent C/C++ obfuscation engine using the LLVM framework to protect software from reverse engineering.</p>
+                    <p>An intelligent C/C++ obfuscation engine using the LLVM framework to protect software from reverse
+                        engineering.</p>
                 </div>
                 <div class="project-card" data-opens="proj-gameoflife-wasm">
                     <div class="thumbnail" style="background-image: url('assets/game_of_life_wasm.gif')"></div>
                     <h3>GameOfLife-Wasm</h3>
-                    <p>Conway's Game of Life in C++, compiled to WebAssembly for near-native performance in the browser.</p>
+                    <p>Conway's Game of Life in C++, compiled to WebAssembly for near-native performance in the browser.
+                    </p>
                 </div>
                 <div class="project-card" data-opens="proj-obvcc">
                     <div class="thumbnail" style="background-image: url('assets/obvcc.png')"></div>
                     <h3>obvcc Compiler</h3>
-                    <p>A simple compiler for a subset of C, featuring a full pipeline from lexical analysis to assembly code generation.</p>
+                    <p>A simple compiler for a subset of C, featuring a full pipeline from lexical analysis to assembly
+                        code generation.</p>
                 </div>
                 <div class="project-card" data-opens="proj-obv-os">
                     <div class="thumbnail" style="background-image: url('assets/obv-os.png')"></div>
                     <h3>obv-OS</h3>
-                    <p>A minimal, bootable 32-bit kernel built from scratch for the RISC-V architecture, running in a QEMU VM.</p>
+                    <p>A minimal, bootable 32-bit kernel built from scratch for the RISC-V architecture, running in a
+                        QEMU VM.</p>
                 </div>
                 <div class="project-card" data-opens="proj-katha-gpt">
                     <div class="thumbnail" style="background-image: url('assets/katha-gpt_thumb.png')"></div>
                     <h3>katha-gpt</h3>
-                    <p>A ~50M parameter language model built from scratch in PyTorch to generate stories in the Marathi language.</p>
+                    <p>A ~50M parameter language model built from scratch in PyTorch to generate stories in the Marathi
+                        language.</p>
                 </div>
                 <div class="project-card" data-opens="proj-paywiz">
                     <div class="thumbnail" style="background-image: url('assets/paywiz_thumb.png')"></div>
                     <h3>PayWiz Payments App</h3>
-                    <p>A full-stack payments application built with the MERN stack (MongoDB, Express, React, Node.js), demonstrating industry-standard API design and application architecture.</p>
+                    <p>A full-stack payments application built with the MERN stack (MongoDB, Express, React, Node.js),
+                        demonstrating industry-standard API design and application architecture.</p>
                 </div>
             </div>
         </div>
@@ -196,13 +238,13 @@
         <div class="title-bar">
             <span class="title-bar-text">About-Me.txt</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
-            <div class="avatar"></div>
+            <div class="avatar" role="img" aria-label="Pixel avatar"></div>
             <h2>Vedant Neve</h2>
             <p>
                 Pre Final Year student at JSPM's Rajarshi Shahu College of Engineering.
@@ -211,15 +253,29 @@
             </p>
             <h3>Career Objective</h3>
             <p>
-                My career objective is to engineer the fundamental systems that power modern technology. I'm driven by a passion for building from first principles, whether that means writing a kernel for a custom OS, designing a compiler with LLVM, or implementing an AI language model from scratch in PyTorch. I thrive on the challenge of understanding and architecting complex, performant, and reliable software.
+                My career objective is to engineer the fundamental systems that power modern technology. I'm driven by a
+                passion for building from first principles, whether that means writing a kernel for a custom OS,
+                designing a compiler with LLVM, or implementing an AI language model from scratch in PyTorch. I thrive
+                on the challenge of understanding and architecting complex, performant, and reliable software.
 
-                I am seeking a challenging software engineering internship at a company that values deep technical expertise and innovation, where I can contribute to ambitious projects in systems programming, compiler engineering, applied AI, Full Stack Development or high-performance computing.
+                I am seeking a challenging software engineering internship at a company that values deep technical
+                expertise and innovation, where I can contribute to ambitious projects in systems programming, compiler
+                engineering, applied AI, Full Stack Development or high-performance computing.
             </p>
             <h3>Technical Skills</h3>
             <p>
                 <b>Languages:</b> C, C++, Rust, Python, Java, OCaml, Odin, Javascript, Typescript.<br>
-                <b>Frameworks & Technologies:</b> LLVM, PyTorch, CUDA, OpenGL, Raylib, Node.js, React.js, Express.js, PostgreSQL, MongoDB, Prisma, Project Loom, WebAssembly, QEMU.<br>
-                <b>Developer Tools:</b> Git, GitHub, GitLab, Docker, Dune, Cargo, Maven, Emscripten, Vim, Neovim, Unix, VS Code, Visual Studio, IntelliJ IDEA, Unreal Engine.
+                <b>Frameworks & Technologies:</b> LLVM, PyTorch, CUDA, OpenGL, Raylib, Node.js, React.js, Express.js,
+                PostgreSQL, MongoDB, Prisma, Project Loom, WebAssembly, QEMU.<br>
+                <b>Developer Tools:</b> Git, GitHub, GitLab, Docker, Dune, Cargo, Maven, Emscripten, Vim, Neovim, Unix,
+                VS Code, Visual Studio, IntelliJ IDEA, Unreal Engine.
+            </p>
+            <h3>Competitive Programming</h3>
+            <p>
+                I am an avid competitive programmer with over <strong>800</strong> problems solved across platforms like
+                LeetCode, Codeforces, and CodeChef. This continuous practice has honed my ability to design efficient,
+                optimized solutions to complex algorithmic challenges. My maximum rating on LeetCode is
+                <strong>1775</strong>.
             </p>
         </div>
     </div>
@@ -228,16 +284,16 @@
         <div class="title-bar">
             <span class="title-bar-text">Academics</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
             <h2>Academic Record</h2>
             <h3>Current Degree (2023-2027)</h3>
             <p>B.Tech, Computer Science & Business Systems at JSPM's Rajarshi Shahu College Of Engineering, Pune.</p>
-            
+
             <h3>Schooling</h3>
             <p>
                 <b>12th Standard:</b> Pratap Vidya Mandir Junior College, Chopda - 77.33% <br>
@@ -261,11 +317,11 @@
                         <td>Semester II</td>
                         <td>9.86</td>
                     </tr>
-                     <tr>
+                    <tr>
                         <td>Semester III</td>
                         <td>9.67</td>
                     </tr>
-                     <tr>
+                    <tr>
                         <td>Semester IV</td>
                         <td>9.63</td>
                     </tr>
@@ -273,14 +329,14 @@
             </table>
         </div>
     </div>
-    
+
     <div class="window" id="certifications" style="width: 500px; height: 300px;">
         <div class="title-bar">
             <span class="title-bar-text">Certifications</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
@@ -296,18 +352,23 @@
         <div class="title-bar">
             <span class="title-bar-text">Activities</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
             <h2>Co-curricular & Extra-curricular</h2>
             <ul>
-                <li><b>DSA and CP Co-Lead:</b> Google Developer Group on Campus RSCOE - Guided students of Second Year about the importance of Competive Programming and DSA in an introduction session. </li>
-                <li><b>Business Lead:</b> TechHawks RSCOE - Organized Several College level events, played roles in managing the event and handling finances throughout the events</li>
-                <li><b>Core Member:</b> Competitive Coding Club, RSCOE - Arranged Competitive Programming Contests and Contest discussions promoting juniors to start doing/get better at competitive programming / DSA</li>
-                <li><b>Core Member:</b> Algorand Blockchain Club, RSCOE - Attended various meetups and sessions organized by algorand community</li>
+                <li><b>DSA and CP Co-Lead:</b> Google Developer Group on Campus RSCOE - Guided students of Second Year
+                    about the importance of Competive Programming and DSA in an introduction session. </li>
+                <li><b>Business Lead:</b> TechHawks RSCOE - Organized Several College level events, played roles in
+                    managing the event and handling finances throughout the events</li>
+                <li><b>Core Member:</b> Competitive Coding Club, RSCOE - Arranged Competitive Programming Contests and
+                    Contest discussions promoting juniors to start doing/get better at competitive programming / DSA
+                </li>
+                <li><b>Core Member:</b> Algorand Blockchain Club, RSCOE - Attended various meetups and sessions
+                    organized by algorand community</li>
             </ul>
         </div>
     </div>
@@ -316,9 +377,9 @@
         <div class="title-bar">
             <span class="title-bar-text">Career Goals</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
@@ -334,19 +395,20 @@
         <div class="title-bar">
             <span class="title-bar-text">New Message</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
             <div class="section-banner"></div>
             <h2>Get In Touch</h2>
-            <p>You can reach me at <a href="mailto:vedantneve13@gmail.com">vedantneve13@gmail.com</a>, find me on social media, or use the form below.</p>
+            <p>You can reach me at <a href="mailto:vedantneve13@gmail.com">vedantneve13@gmail.com</a>, find me on social
+                media, or use the form below.</p>
             <p>
-                <a href="https://github.com/0bVdnt" target="_blank">GitHub</a> | 
-                <a href="https://linkedin.com/in/vedantneve" target="_blank">LinkedIn</a> | 
-                <a href="https://x.com/0bVdnt" target="_blank">X/Twitter</a>
+                <a href="https://github.com/0bVdnt" target="_blank" rel="noopener">GitHub</a> |
+                <a href="https://linkedin.com/in/vedantneve" target="_blank" rel="noopener">LinkedIn</a> |
+                <a href="https://x.com/0bVdnt" target="_blank" rel="noopener">X/Twitter</a>
             </p>
             <br>
             <form class="contact-form" action="https://formspree.io/f/xldwodlr" method="POST">
@@ -362,25 +424,28 @@
         <div class="title-bar">
             <span class="title-bar-text">C:\Workbench</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
             <h2>The Forge: What I'm Building Now</h2>
-            <p>These are the projects currently on my workbench. They represent my ongoing exploration into new technologies and complex challenges.</p>
+            <p>These are the projects currently on my workbench. They represent my ongoing exploration into new
+                technologies and complex challenges.</p>
 
             <div data-opens="proj-jerm" class="project-card">
                 <div class="thumbnail" style="background-image: url('assets/jerm_thumb.png')"></div>
                 <h3>Jerm Terminal</h3>
-                <p>A high-performance, cross-platform terminal in modern Java (JDK 21+) using Project Loom for div highly concurrent, non-blocking UI.</p>
+                <p>A high-performance, cross-platform terminal in modern Java (JDK 21+) using Project Loom for div
+                    highly concurrent, non-blocking UI.</p>
             </div>
 
             <div data-opens="proj-cuda-gl" class="project-card">
                 <div class="thumbnail" style="background-image: url('assets/cudagl_thumb.png')"></div>
                 <h3>cuda-GL</h3>
-                <p>Diving into parallel computing by building GPU-accelerated graphics components with CUDA and OpenGL.</p>
+                <p>Diving into parallel computing by building GPU-accelerated graphics components with CUDA and OpenGL.
+                </p>
             </div>
         </div>
     </div>
@@ -389,14 +454,15 @@
         <div class="title-bar">
             <span class="title-bar-text">Reading.txt - Notepad</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
-            <h2>Intellectual Curiosity</h2>
-            <p>Great software is built on a solid foundation of theory. I'm currently working my way through these classics:</p>
+            <h2>Curiosity</h2>
+            <p>Great software is built on a solid foundation of theory. I'm currently working my way through these
+                classics:</p>
             <ul>
                 <li><b>Artificial Intelligence: A Modern Approach</b> by Stuart Russell and Peter Norvig</li>
                 <li><b>Computer Networking: A Top-Down Approach</b> by James Kurose and Keith Ross</li>
@@ -404,26 +470,30 @@
             </ul>
         </div>
     </div>
-    
+
     <div class="window project-detail-window" id="proj-chakravyuha" style="width: 700px; height: 550px;">
         <div class="title-bar">
             <span class="title-bar-text">Project: Chakravyuha</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
             <h2>Chakravyuha: LLVM Obfuscation Engine</h2>
             <p>
-                Chakravyuha is an intelligent, adaptive C/C++ obfuscation engine built on the LLVM compiler framework. It protects software intellectual property from reverse engineering and tampering by injecting sophisticated, layered code transformations directly into the compilation pipeline.
+                Chakravyuha is an intelligent, adaptive C/C++ obfuscation engine built on the LLVM compiler framework.
+                It protects software intellectual property from reverse engineering and tampering by injecting
+                sophisticated, layered code transformations directly into the compilation pipeline.
             </p>
             <h3>Key Features:</h3>
             <ul>
                 <li>Integrates directly with LLVM's pass manager for seamless compilation.</li>
-                <li>Implements multiple obfuscation techniques like bogus control flow and instruction substitution.</li>
-                <li>Designed to be context-aware, applying transformations intelligently to minimize performance overhead.</li>
+                <li>Implements multiple obfuscation techniques like bogus control flow and instruction substitution.
+                </li>
+                <li>Designed to be context-aware, applying transformations intelligently to minimize performance
+                    overhead.</li>
             </ul>
             <h3>Tech Stack:</h3>
             <div class="tech-stack">
@@ -432,8 +502,13 @@
                 <span class="tech-badge cmake">CMake</span>
                 <span class="tech-badge systems">Systems Programming</span>
             </div>
-            <a href="https://github.com/0bVdnt/POC-Chakravyuha.git" class="github-button" target="_blank">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <a href="https://github.com/0bVdnt/POC-Chakravyuha.git" class="github-button" target="_blank"
+                rel="noopener">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <title>GitHub</title>
+                    <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
                 View on GitHub
             </a>
         </div>
@@ -443,15 +518,18 @@
         <div class="title-bar">
             <span class="title-bar-text">Project: katha-gpt</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
             <h2>katha-gpt: Generative AI Language Model</h2>
             <p>
-                katha-gpt is a generative language model with ~50 million parameters, built entirely from scratch based on the GPT-2 architecture. The entire machine learning pipeline—from the custom BPE tokenizer and data pre-processing to the training loop and inference logic—was implemented in PyTorch. The model is trained on a custom dataset to generate coherent, original stories in the Marathi language from a user prompt.
+                katha-gpt is a generative language model with ~50 million parameters, built entirely from scratch based
+                on the GPT-2 architecture. The entire machine learning pipeline—from the custom BPE tokenizer and data
+                pre-processing to the training loop and inference logic—was implemented in PyTorch. The model is trained
+                on a custom dataset to generate coherent, original stories in the Marathi language from a user prompt.
             </p>
             <h3>Key Features:</h3>
             <ul>
@@ -466,8 +544,12 @@
                 <span class="tech-badge ai-ml">AI/ML</span>
                 <span class="tech-badge nlp">NLP</span>
             </div>
-            <a href="https://github.com/0bVdnt/katha-gpt" class="github-button" target="_blank">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <a href="https://github.com/0bVdnt/katha-gpt" class="github-button" target="_blank" rel="noopener">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <title>GitHub</title>
+                    <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23 .645 1.653 .24 2.873 .12 3.176 .765 .84 1.23 1.91 1.23 3.22 0 4.61 -2.805 5.625-5.475 5.92 .42 .36 .81 1.096 .81 2.22 0 1.606 -.015 2.896 -.015 3.286 0 .315 .21 .69 .825 .57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
                 View on GitHub
             </a>
         </div>
@@ -477,20 +559,23 @@
         <div class="title-bar">
             <span class="title-bar-text">Project: obv-OS</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
             <h2>obv-OS: A Kernel from Scratch</h2>
             <p>
-                obv-OS is a minimal, bootable 32-bit operating system kernel designed for the RISC-V architecture. This project was an exercise in understanding the absolute fundamentals of computing, from bootloading and memory management to interacting directly with hardware via inline assembly. The kernel runs in a QEMU virtual machine.
+                obv-OS is a minimal, bootable 32-bit operating system kernel designed for the RISC-V architecture. This
+                project was an exercise in understanding the absolute fundamentals of computing, from bootloading and
+                memory management to interacting directly with hardware via inline assembly. The kernel runs in a QEMU
+                virtual machine.
             </p>
             <h3>Key Features:</h3>
             <ul>
                 <li>Built entirely from scratch, with no external OS libraries.</li>
-                <li>Uses a combination of C and inline assembly (`__asm__`) for low-level control.</li>
+                <li>Uses a combination of C and inline assembly (<code>__asm__</code>) for low-level control.</li>
                 <li>Targets the popular RISC-V ISA, a modern instruction set architecture for learning.</li>
             </ul>
             <h3>Tech Stack:</h3>
@@ -501,8 +586,12 @@
                 <span class="tech-badge qemu">QEMU</span>
                 <span class="tech-badge risc-v">RISC-V</span>
             </div>
-            <a href="https://github.com/0bVdnt/obv-OS.git" class="github-button" target="_blank">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <a href="https://github.com/0bVdnt/obv-OS.git" class="github-button" target="_blank" rel="noopener">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <title>GitHub</title>
+                    <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495 .998 .108 -.776 .417 -1.305 .76 -1.605 -2.665 -.3 -5.466 -1.332 -5.466 -5.93 0 -1.31 .465 -2.38 1.235 -3.22 -.135 -.303 -.54 -1.523 .105 -3.176 0 0 1.005 -.322 3.3 1.23 .96 -.267 1.98 -.399 3 -.405 1.02 .006 2.04 .138 3 .405 2.28 -1.552 3.285 -1.23 3.285 -1.23 .645 1.653 .24 2.873 .12 3.176 .765 .84 1.23 1.91 1.23 3.22 0 4.61 -2.805 5.625 -5.475 5.92 .42 .36 .81 1.096 .81 2.22 0 1.606 -.015 2.896 -.015 3.286 0 .315 .21 .69 .825 .57C20.565 22.092 24 17.592 24 12.297 c0 -6.627 -5.373 -12 -12 -12" />
+                </svg>
                 View on GitHub
             </a>
         </div>
@@ -512,15 +601,18 @@
         <div class="title-bar">
             <span class="title-bar-text">Project: obvcc</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
             <h2>obvcc: A Minimal C Compiler</h2>
             <p>
-                obvcc is a multi-stage compiler that transforms a minimal, C-like language into platform-aware x64 assembly. The entire pipeline, including a lexer, parser, assembly generator, and code emitter, was built from scratch. This project provided a deep, hands-on understanding of language design, parsing theory, and code generation.
+                obvcc is a multi-stage compiler that transforms a minimal, C-like language into platform-aware x64
+                assembly. The entire pipeline, including a lexer, parser, assembly generator, and code emitter, was
+                built from scratch. This project provided a deep, hands-on understanding of language design, parsing
+                theory, and code generation.
             </p>
             <h3>Key Features:</h3>
             <ul>
@@ -535,8 +627,12 @@
                 <span class="tech-badge compilers">Compiler Design</span>
                 <span class="tech-badge systems">Systems Programming</span>
             </div>
-            <a href="https://github.com/0bVdnt/obvcc.git" class="github-button" target="_blank">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <a href="https://github.com/0bVdnt/obvcc.git" class="github-button" target="_blank" rel="noopener">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <title>GitHub</title>
+                    <path
+                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495 .998 .108 -.776 .417 -1.305 .76 -1.605 -2.665 -.3 -5.466 -1.332 -5.466 -5.93 0 -1.31 .465 -2.38 1.235 -3.22 -.135 -.303 -.54 -1.523 .105 -3.176 0 0 1.005 -.322 3.3 1.23 .96 -.267 1.98 -.399 3 -.405 1.02 .006 2.04 .138 3 .405 2.28 -1.552 3.285 -1.23 3.285 -1.23 .645 1.653 .24 2.873 .12 3.176 .765 .84 1.23 1.91 1.23 3.22 0 4.61 -2.805 5.625 -5.475 5.92 .42 .36 .81 1.096 .81 2.22 0 1.606 -.015 2.896 -.015 3.286 0 .315 .21 .69 .825 .57C20.565 22.092 24 17.592 24 12.297 c0 -6.627 -5.373 -12 -12 -12" />
+                </svg>
                 View on GitHub
             </a>
         </div>
@@ -546,15 +642,18 @@
         <div class="title-bar">
             <span class="title-bar-text">Project: PayWiz</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
             <h2>PayWiz: Full-Stack Payments Application</h2>
             <p>
-                PayWiz is a complete, full-stack payments application built using the MERN stack. It simulates a basic peer-to-peer wallet, allowing users to sign up, manage their balance, and send money to other users. The project emphasizes a clean, maintainable, and secure architecture, featuring a RESTful API backend and a responsive React frontend.
+                PayWiz is a complete, full-stack payments application built using the MERN stack. It simulates a basic
+                peer-to-peer wallet, allowing users to sign up, manage their balance, and send money to other users. The
+                project emphasizes a clean, maintainable, and secure architecture, featuring a RESTful API backend and a
+                responsive React frontend.
             </p>
             <h3>Key Features:</h3>
             <ul>
@@ -571,8 +670,12 @@
                 <span class="tech-badge javascript">JavaScript</span>
                 <span class="tech-badge full-stack">Full-Stack</span>
             </div>
-            <a href="https://github.com/0bVdnt/PayWiz.git" class="github-button" target="_blank">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <a href="https://github.com/0bVdnt/PayWiz.git" class="github-button" target="_blank" rel="noopener">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <title>GitHub</title>
+                    <path
+                        d="M12 .297c-6.63 0 -12 5.373 -12 12 0 5.303 3.438 9.8 8.205 11.385 .6 .113 .82 -.258 .82 -.577 0 -.285 -.01 -1.04 -.015 -2.04 -3.338 .724 -4.042 -1.61 -4.042 -1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087 -.744 .084 -.729 .084 -.729 1.205 .084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495 .998 .108 -.776 .417 -1.305 .76 -1.605 -2.665 -.3 -5.466 -1.332 -5.466 -5.93 0 -1.31 .465 -2.38 1.235 -3.22 -.135 -.303 -.54 -1.523 .105 -3.176 0 0 1.005 -.322 3.3 1.23 .96 -.267 1.98 -.399 3 -.405 1.02 .006 2.04 .138 3 .405 2.28 -1.552 3.285 -1.23 3.285 -1.23 .645 1.653 .24 2.873 .12 3.176 .765 .84 1.23 1.91 1.23 3.22 0 4.61 -2.805 5.625 -5.475 5.92 .42 .36 .81 1.096 .81 2.22 0 1.606 -.015 2.896 -.015 3.286 0 .315 .21 .69 .825 .57C20.565 22.092 24 17.592 24 12.297 c0 -6.627 -5.373 -12 -12 -12" />
+                </svg>
                 View on GitHub
             </a>
         </div>
@@ -582,15 +685,18 @@
         <div class="title-bar">
             <span class="title-bar-text">Project: Jerm</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
             <h2>Jerm: High-Performance Terminal</h2>
             <p>
-                Jerm is a high-performance, cross-platform terminal application built from scratch using modern Java (JDK 21+). The application provides a unified Text-based User Interface (TUI) for executing commands on native shells (PowerShell, Bash, etc.). The core architecture leverages Java's Virtual Threads (Project Loom) for highly concurrent, non-blocking I/O, ensuring a responsive and efficient UI.
+                Jerm is a high-performance, cross-platform terminal application built from scratch using modern Java
+                (JDK 21+). The application provides a unified Text-based User Interface (TUI) for executing commands on
+                native shells (PowerShell, Bash, etc.). The core architecture leverages Java's Virtual Threads (Project
+                Loom) for highly concurrent, non-blocking I/O, ensuring a responsive and efficient UI.
             </p>
             <h3>Key Features:</h3>
             <ul>
@@ -605,8 +711,12 @@
                 <span class="tech-badge maven">Maven</span>
                 <span class="tech-badge systems">Systems Programming</span>
             </div>
-            <a href="https://github.com/0bVdnt/Jerm.git" class="github-button" target="_blank">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <a href="https://github.com/0bVdnt/Jerm.git" class="github-button" target="_blank" rel="noopener">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <title>GitHub</title>
+                    <path
+                        d="M12 .297c-6.63 0-12 5.373 -12 12 0 5.303 3.438 9.8 8.205 11.385 .6.113 .82-.258 .82-.577 0-.285 -.01-1.04 -.015-2.04 -3.338 .724 -4.042-1.61 -4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087 -.744 .084-.729 .084-.729 1.205 .084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495 .998 .108 -.776 .417 -1.305 .76 -1.605 -2.665 -.3 -5.466 -1.332 -5.466 -5.93 0 -1.31 .465 -2.38 1.235 -3.22 -.135 -.303 -.54 -1.523 .105 -3.176 0 0 1.005 -.322 3.3 1.23 .96 -.267 1.98 -.399 3 -.405 1.02 .006 2.04 .138 3 .405 2.28 -1.552 3.285 -1.23 3.285 -1.23 .645 1.653 .24 2.873 .12 3.176 .765 .84 1.23 1.91 1.23 3.22 0 4.61 -2.805 5.625 -5.475 5.92 .42 .36 .81 1.096 .81 2.22 0 1.606 -.015 2.896 -.015 3.286 0 .315 .21 .69 .825 .57C20.565 22.092 24 17.592 24 12.297 c0 -6.627 -5.373 -12 -12 -12" />
+                </svg>
                 View on GitHub
             </a>
         </div>
@@ -616,15 +726,18 @@
         <div class="title-bar">
             <span class="title-bar-text">Project: cuda-GL</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
             <h2>cuda-GL: GPU Accelerated Graphics</h2>
             <p>
-                This project is a deep dive into high-performance, parallel computing by building graphics components from scratch. It leverages the raw power of NVIDIA's CUDA platform for general-purpose GPU computations and OpenGL for rendering. The goal is to explore the synergy between the two technologies for creating real-time, computationally intensive visual applications.
+                This project is a deep dive into high-performance, parallel computing by building graphics components
+                from scratch. It leverages the raw power of NVIDIA's CUDA platform for general-purpose GPU computations
+                and OpenGL for rendering. The goal is to explore the synergy between the two technologies for creating
+                real-time, computationally intensive visual applications.
             </p>
             <h3>Key Features:</h3>
             <ul>
@@ -639,8 +752,12 @@
                 <span class="tech-badge c-plus-plus">C++</span>
                 <span class="tech-badge hpc">HPC</span>
             </div>
-            <a href="https://github.com/0bVdnt/cuda-GL.git" class="github-button" target="_blank">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <a href="https://github.com/0bVdnt/cuda-GL.git" class="github-button" target="_blank" rel="noopener">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <title>GitHub</title>
+                    <path
+                        d="M12 .297c-6.63 0 -12 5.373 -12 12 0 5.303 3.438 9.8 8.205 11.385 .6 .113 .82 -.258 .82 -.577 0 -.285 -.01 -1.04 -.015 -2.04 -3.338 .724 -4.042 -1.61 -4.042 -1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087 -.744 .084 -.729 .084 -.729 1.205 .084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495 .998 .108 -.776 .417 -1.305 .76 -1.605 -2.665 -.3 -5.466 -1.332 -5.466 -5.93 0 -1.31 .465 -2.38 1.235 -3.22 -.135 -.303 -.54 -1.523 .105 -3.176 0 0 1.005 -.322 3.3 1.23 .96 -.267 1.98 -.399 3 -.405 1.02 .006 2.04 .138 3 .405 2.28 -1.552 3.285 -1.23 3.285 -1.23 .645 1.653 .24 2.873 .12 3.176 .765 .84 1.23 1.91 1.23 3.22 0 4.61 -2.805 5.625 -5.475 5.92 .42 .36 .81 1.096 .81 2.22 0 1.606 -.015 2.896 -.015 3.286 0 .315 .21 .69 .825 .57C20.565 22.092 24 17.592 24 12.297 c0 -6.627 -5.373 -12 -12 -12" />
+                </svg>
                 View on GitHub
             </a>
         </div>
@@ -650,15 +767,18 @@
         <div class="title-bar">
             <span class="title-bar-text">Project: GameOfLife-Wasm</span>
             <div class="title-bar-controls">
-                <button class="minimize-btn">_</button>
-                <button class="maximize-btn">□</button>
-                <button class="close-btn">×</button>
+                <button class="minimize-btn" aria-label="Minimize">_</button>
+                <button class="maximize-btn" aria-label="Maximize">□</button>
+                <button class="close-btn" aria-label="Close">×</button>
             </div>
         </div>
         <div class="window-body">
             <h2>Game of Life in WebAssembly</h2>
             <p>
-                This project is a high-performance implementation of Conway's Game of Life that runs directly in the browser. The core simulation logic is written in C++ and then compiled to WebAssembly (Wasm) using the Emscripten toolchain. This approach allows for computationally-intensive logic to execute at near-native speeds, far surpassing what is possible with standard JavaScript.
+                This project is a high-performance implementation of Conway's Game of Life that runs directly in the
+                browser. The core simulation logic is written in C++ and then compiled to WebAssembly (Wasm) using the
+                Emscripten toolchain. This approach allows for computationally-intensive logic to execute at near-native
+                speeds, far surpassing what is possible with standard JavaScript.
             </p>
             <h3>Key Features:</h3>
             <ul>
@@ -674,24 +794,79 @@
                 <span class="tech-badge javascript">JavaScript</span>
                 <span class="tech-badge performance">Performance</span>
             </div>
-            <a href="https://github.com/0bVdnt/GameOfLife-WebAssembly" class="github-button" target="_blank">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            <a href="https://github.com/0bVdnt/GameOfLife-WebAssembly" class="github-button" target="_blank"
+                rel="noopener">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <title>GitHub</title>
+                    <path
+                        d="M12 .297c-6.63 0 -12 5.373 -12 12 0 5.303 3.438 9.8 8.205 11.385 .6 .113 .82 -.258 .82 -.577 0 -.285 -.01 -1.04 -.015 -2.04 -3.338 .724 -4.042 -1.61 -4.042 -1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087 -.744 .084 -.729 .084 -.729 1.205 .084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495 .998 .108 -.776 .417 -1.305 .76 -1.605 -2.665 -.3 -5.466 -1.332 -5.466 -5.93 0 -1.31 .465 -2.38 1.235 -3.22 -.135 -.303 -.54 -1.523 .105 -3.176 0 0 1.005 -.322 3.3 1.23 .96 -.267 1.98 -.399 3 -.405 1.02 .006 2.04 .138 3 .405 2.28 -1.552 3.285 -1.23 3.285 -1.23 .645 1.653 .24 2.873 .12 3.176 .765 .84 1.23 1.91 1.23 3.22 0 4.61 -2.805 5.625 -5.475 5.92 .42 .36 .81 1.096 .81 2.22 0 1.606 -.015 2.896 -.015 3.286 0 .315 .21 .69 .825 .57C20.565 22.092 24 17.592 24 12.297 c0 -6.627 -5.373 -12 -12 -12" />
+                </svg>
                 View on GitHub
             </a>
         </div>
     </div>
 
-    <div class="taskbar">
-        <div class="start-button">ObvOS</div>
-        <div class="open-window-tray"></div>
-        <div class="clock" id="live-clock"></div>
+    <div class="window" id="cp-stats" style="width: 550px; height: 450px;">
+        <div class="title-bar">
+            <span class="title-bar-text">Profile: Competitive Programmer</span>
+            <div class="title-bar-controls">
+                <button class="minimize-btn">_</button>
+                <button class="maximize-btn">□</button>
+                <button class="close-btn">×</button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h2>Problem Solving & Algorithms</h2>
+            <p>
+                I have a deep passion for competitive programming, which I use to continuously sharpen my skills in data
+                structures, algorithms, and efficient problem-solving under pressure.
+            </p>
+
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-value">800+</span>
+                    <span class="stat-label">Problems Solved</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-value">1775</span>
+                    <span class="stat-label">LeetCode Max Rating</span>
+                </div>
+            </div>
+
+            <h3>Platform Profiles:</h3>
+            <div class="platform-links">
+                <a href="https://leetcode.com/u/0bVdnt" target="_blank" class="platform-link">
+                    <img src="assets/leetcode.png" alt="LeetCode Logo">
+                    <span>LeetCode</span>
+                </a>
+                <a href="https://www.codechef.com/users/obvdnt" target="_blank" class="platform-link">
+                    <img src="assets/codechef_logo.png" alt="CodeChef Logo">
+                    <span>CodeChef</span>
+                </a>
+                <a href="https://codeforces.com/profile/0bVdnt" target="_blank" class="platform-link">
+                    <img src="assets/codeforces_logo.png" alt="Codeforces Logo">
+                    <span>Codeforces</span>
+                </a>
+                <a href="https://atcoder.jp/users/0bVdnt" target="_blank" class="platform-link">
+                    <img src="assets/atcoder_logo.png" alt="AtCoder Logo">
+                    <span>AtCoder</span>
+                </a>
+            </div>
+        </div>
     </div>
 
-    <div class="start-menu">
+    <div class="taskbar" role="toolbar" aria-label="System taskbar">
+        <button class="start-button" type="button" aria-haspopup="true" aria-expanded="false">ObvOS</button>
+        <div class="open-window-tray" aria-live="polite"></div>
+        <div class="clock" id="live-clock" aria-live="polite"></div>
+    </div>
+
+    <div class="start-menu" role="menu" aria-label="Start menu">
         <ul></ul>
     </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
