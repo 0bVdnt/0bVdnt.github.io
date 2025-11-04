@@ -134,7 +134,7 @@ body::before {
 .desktop {
     height: calc(100vh - 48px);
     width: 100%;
-    background: url('./assets/wallpaper.jpg') no-repeat center center fixed;
+    background: url('./assets/wallpaper2.gif') no-repeat center center fixed;
     background-size: cover;
     position: relative;
     padding: 25px;
