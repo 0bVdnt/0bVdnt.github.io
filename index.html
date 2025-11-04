@@ -26,42 +26,44 @@
 ╚██╗ ██╔╝██╔══╝  ██║  ██║██╔══██║██║╚██╗██║   ██║       ██║╚██╗██║██╔══╝  ╚██╗ ██╔╝██╔══╝  
  ╚████╔╝ ███████╗██████╔╝██║  ██║██║ ╚████║   ██║       ██║ ╚████║███████╗ ╚████╔╝ ███████╗
   ╚═══╝  ╚══════╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝       ╚═╝  ╚═══╝╚══════╝  ╚═══╝  ╚══════╝
-  ObvOS BIOS v1.0
-  Initializing System...
-  Memory Check: 640KB OK
-  Loading Kernel... [▓▓▓▓▓▓▓▓▓▓] 100%
-  Mounting File Systems... Done.
-  Starting Services...
-  ...
-  Welcome to ObvOS
-</pre>
-</div>
+                                
 
-<div class="desktop">
-    <div class="icon-grid" role="list">
-        <div class="desktop-icon" data-opens="obvterm" role="button" aria-label="Open 0bV-Term" tabindex="0">
+                                ObvOS BIOS v1.0
+                                Initializing System...
+                                Memory Check: 640KB OK
+                                Loading Kernel... [▓▓▓▓▓▓▓▓▓▓] 100%
+                                Mounting File Systems... Done.
+                                Starting Services...
+                                ...
+                                Welcome to ObvOS
+</pre>
+    </div>
+
+    <div class="desktop">
+        <div class="icon-grid" role="list">
+            <div class="desktop-icon" data-opens="obvterm" role="button" aria-label="Open 0bV-Term" tabindex="0">
                 <img src="assets/terminal.webp" class="icon-image" alt="Terminal icon">
                 <span>0bV-Term</span>
             </div>
-            
+
             <div class="desktop-icon" data-opens="about-me" role="button" aria-label="Open About Me" tabindex="0">
                 <img src="assets/me.gif" class="icon-image" alt="About Me icon">
                 <span>About-Me</span>
             </div>
-            
+
             <div class="desktop-icon" data-opens="projects" role="button" aria-label="Open Projects" tabindex="0">
                 <img src="assets/projects.gif" class="icon-image" alt="Projects folder icon">
                 <span>Projects</span>
             </div>
-            
+
             <div class="desktop-icon" data-opens="cp-stats" role="button" aria-label="Open CP Stats" tabindex="0">
                 <img src="assets/cp_stats.gif" class="icon-image" alt="Competitive Programming Stats">
                 <span>CP-Stats</span>
             </div>
-            
+
             <a class="desktop-icon" href="https://leetcode.com/u/0bVdnt" target="_blank" rel="noopener"
-            aria-label="Open LeetCode">
-            <img src="assets/leetcode.png" class="icon-image" alt="LeetCode">
+                aria-label="Open LeetCode">
+                <img src="assets/leetcode.png" class="icon-image" alt="LeetCode">
                 <span>LeetCode</span>
             </a>
 
@@ -69,18 +71,18 @@
                 <img src="assets/library.gif" class="icon-image" alt="Library icon">
                 <span>Reading.txt</span>
             </div>
-            
+
             <div class="desktop-icon" data-opens="academics" role="button" aria-label="Open Academics" tabindex="0">
                 <img src="assets/academics.png" class="icon-image" alt="Academics icon">
                 <span>Academics</span>
             </div>
-            
+
             <div class="desktop-icon" data-opens="certifications" role="button" aria-label="Open Certifications"
-            tabindex="0">
-            <img src="assets/certs.png" class="icon-image" alt="Certifications icon">
-            <span>Certs</span>
-        </div>
-        
+                tabindex="0">
+                <img src="assets/certs.png" class="icon-image" alt="Certifications icon">
+                <span>Achievements</span>
+            </div>
+
             <div class="desktop-icon" data-opens="activities" role="button" aria-label="Open Activities" tabindex="0">
                 <img src="assets/extraCurr.png" class="icon-image" alt="Activities icon">
                 <span>Activities</span>
@@ -330,23 +332,57 @@
         </div>
     </div>
 
-    <div class="window" id="certifications" style="width: 500px; height: 300px;">
-        <div class="title-bar">
-            <span class="title-bar-text">Certifications</span>
-            <div class="title-bar-controls">
-                <button class="minimize-btn" aria-label="Minimize">_</button>
-                <button class="maximize-btn" aria-label="Maximize">□</button>
-                <button class="close-btn" aria-label="Close">×</button>
-            </div>
-        </div>
-        <div class="window-body">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Machine Learning Specialization - Coursera</li>
-                <li>Accelerating Applications using CUDA C/C++ - NVIDIA</li>
-            </ul>
+<!-- DELETE your old certifications window and REPLACE it with this one -->
+<div class="window" id="certifications" style="width: 650px; height: 550px;">
+    <div class="title-bar">
+        <span class="title-bar-text">Achievements & Certifications</span>
+        <div class="title-bar-controls">
+            <button class="minimize-btn">_</button>
+            <button class="maximize-btn">□</button>
+            <button class="close-btn">×</button>
         </div>
     </div>
+    <div class="window-body">
+        <h2>Achievements & Certifications</h2>
+        
+        <h3 class="achievement-header cert-header">Professional Certifications</h3>
+        <div class="achievement-list">
+            <div class="achievement-item">
+                <h4>Machine Learning Specialization</h4>
+                <p>Issued by: <strong>Coursera & Stanford University</strong></p>
+            </div>
+            <div class="achievement-item">
+                <h4>Getting Started with Accelerated Computing in CUDA C/C++</h4>
+                <p>Issued by: <strong>NVIDIA</strong></p>
+            </div>
+            <div class="achievement-item">
+                <h4>Red Hat Application Development I: Programming in Java EE</h4>
+                <p>Issued by: <strong>Red Hat</strong></p>
+            </div>
+        </div>
+        
+        <h3 class="achievement-header hackathon-header">Competitive Achievements & Hackathons</h3>
+        <div class="achievement-list">
+            <div class="achievement-item">
+                <h4>Adobe India Hackathon</h4>
+                <p>Participant in a high-intensity national-level hackathon focused on building innovative solutions, hosted by Adobe.</p>
+            </div>
+            <div class="achievement-item">
+                <h4>Convolve 3.0 - Pan IIT AI/ML Hackathon</h4>
+                <p>Competed in a prestigious, inter-IIT hackathon centered on solving complex challenges using Artificial Intelligence and Machine Learning.</p>
+            </div>
+            <div class="achievement-item">
+                <h4>Bugslayers - Build with India</h4>
+                <p>Participant in a collaborative hackathon aimed at developing practical applications and solutions for real-world problems in India.</p>
+            </div>
+            <div class="achievement-item">
+                <h4>Eco-Hackathon - Technex'25</h4>
+                <p>Engaged in a theme-based hackathon focused on creating sustainable technology and environmentally-friendly solutions.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
 
     <div class="window" id="activities" style="width: 650px; height: 450px;">
         <div class="title-bar">
@@ -383,11 +419,25 @@
             </div>
         </div>
         <div class="window-body">
-            <h2>Career Goals</h2>
-            <h3>Short-term goal</h3>
-            <p>Learn about different technologies and develop projects using them.</p>
-            <h3>Long-term goal</h3>
-            <p>To help contribute for the betterment of society through my work.</p>
+            <h2>My Trajectory</h2>
+            <h3>The Next Steps</h3>
+            <p>
+                Over the next couple of years, I'm focused on applying my skills in a real-world, high-impact
+                environment. I'm actively seeking an internship where I can work on the complex challenges found in
+                <b>systems programming, compiler design, or applied AI</b>. I've learned a lot by building from the ground
+                up; now, my goal is to become a contributor to a major open-source ecosystem that I admire, like <b>LLVM,
+                Rust, or PyTorch</b>, and to go deeper into specialized fields like GPU programming.
+            </p>
+
+            <h3>The Long View</h3>
+            <p>
+                Looking further ahead, I see myself architecting the tools that empower other developers. My ambition is
+                to be in a position—as a <b>Principal Engineer or a Tech Lead</b>—where I can lead the development of
+                foundational software. I'm fascinated by the leverage that comes from improving the core systems we all
+                depend on. Whether it's designing a more efficient compiler, a smarter OS scheduler, or a better
+                framework for AI, my long-term goal is to build the critical infrastructure that will enable the next
+                generation of technological breakthroughs.
+            </p>
         </div>
     </div>
 

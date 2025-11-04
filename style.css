@@ -1445,3 +1445,54 @@ body::before {
 .token-dir    { color: var(--cat-sky); }
 .token-file   { color: var(--cat-green); }
 .token-sep    { color: var(--cat-overlay1); }
+
+/* Add these new styles to your style.css file */
+
+.achievement-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--blue-glow);
+}
+
+/* Use pseudo-elements to add cool icons! */
+.achievement-header.hackathon-header::before {
+    content: '🏆';
+    font-size: 20px;
+}
+.achievement-header.cert-header::before {
+    content: '📜';
+    font-size: 20px;
+}
+
+.achievement-list {
+    margin-top: 15px;
+}
+
+.achievement-item {
+    padding: 10px 15px;
+    border-left: 3px solid var(--blue-glow);
+    margin-bottom: 15px;
+    background-color: var(--primary);
+}
+
+.achievement-item h4 {
+    font-family: 'Fira Code', monospace;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--font-color);
+    margin: 0 0 5px 0;
+}
+
+.achievement-item p {
+    font-size: 14px;
+    color: #b0c4de; /* Lighter text color */
+    line-height: 1.5;
+    margin: 0;
+}
+
+.achievement-item p strong {
+    color: var(--green-glow);
+}
