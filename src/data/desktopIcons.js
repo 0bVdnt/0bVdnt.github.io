@@ -8,7 +8,7 @@ export const desktopIcons = [
     { id: 'activities', name: 'Activities', icon: '/assets/extraCurr.png', type: 'window' },
     { id: 'goals', name: 'Goals', icon: '/assets/goals.png', type: 'window' },
     { id: 'library', name: 'Reading.txt', icon: '/assets/library.gif', type: 'window' },
-    { id: 'blogs', name: 'Blogs', icon: '/assets/academics.png', type: 'window' },
+    { id: 'blogs', name: 'Blogs', icon: '/assets/blogs.gif', type: 'window' },
     { id: 'resume', name: 'Resume.pdf', icon: '/assets/resume.png', type: 'link', url: 'https://drive.google.com/file/d/1AXKKNJery1O_8104KShRuHgAwvKbUCtb/' },
     { id: 'obvterm', name: '0bV-Term', icon: '/assets/terminal.webp', type: 'window' },
     { id: 'github', name: 'GitHub', icon: '/assets/github-octopuss.gif', type: 'link', url: 'https://github.com/0bVdnt' },
