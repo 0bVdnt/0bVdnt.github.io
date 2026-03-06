@@ -1,0 +1,134 @@
+.desktop {
+    height: calc(100vh - 52px);
+    width: 100%;
+    background: url('/assets/wallpaper2.gif') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    padding: 25px;
+    overflow: hidden;
+}
+
+/* Subtle grid overlay */
+.desktop::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(180, 190, 254, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(180, 190, 254, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+/* Subtle scanlines */
+.desktop::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(180, 190, 254, 0.02) 50%, transparent 50%);
+    background-size: 100% 4px;
+    pointer-events: none;
+}
+
+.icon-grid {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 14px 18px;
+    height: 100%;
+    width: 280px;
+    max-width: 280px;
+    padding-right: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.widget-container {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+    z-index: 5;
+    max-height: calc(100vh - 120px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #cba6f7 transparent;
+}
+
+.widget-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.widget-container::-webkit-scrollbar-thumb {
+    background: #cba6f7;
+    border-radius: 3px;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+    .widget-container {
+        width: 280px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .widget-container {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 0 20px 20px 20px;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .icon-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 14px 16px;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .desktop {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        height: auto;
+        min-height: calc(100vh - 52px);
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop {
+        padding: 16px;
+        height: auto;
+        min-height: calc(100vh - 56px);
+        overflow-y: visible;
+    }
+
+    .widget-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0 4px 12px 4px;
+    }
+
+    .icon-grid {
+        grid-template-columns: repeat(3, minmax(90px, 1fr));
+        gap: 12px;
+    }
+}

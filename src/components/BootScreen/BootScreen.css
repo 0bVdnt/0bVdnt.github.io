@@ -1,0 +1,159 @@
+.boot-screen {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(135deg, #11111b 0%, #1e1e2e 50%, #11111b 100%);
+  color: #cdd6f4;
+  font-family: 'VT323', monospace;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.boot-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.boot-logo {
+  text-align: center;
+}
+
+.boot-logo-icon {
+  font-size: 96px;
+  display: block;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #cba6f7, #f5c2e7, #89b4fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: logo-glow 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes logo-glow {
+  from {
+    filter: drop-shadow(0 0 20px rgba(203, 166, 247, 0.5));
+  }
+
+  to {
+    filter: drop-shadow(0 0 40px rgba(203, 166, 247, 0.8));
+  }
+}
+
+.boot-title {
+  font-size: 56px;
+  margin: 0;
+  letter-spacing: 8px;
+  text-shadow: 0 0 30px rgba(203, 166, 247, 0.5);
+  color: #cdd6f4;
+}
+
+.boot-ascii {
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #a6e3a1;
+  text-shadow: 0 0 15px rgba(166, 227, 161, 0.6);
+  text-align: center;
+  margin: 0;
+  white-space: pre;
+}
+
+
+.boot-progress-container {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.boot-progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #313244;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid #585b70;
+}
+
+.boot-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #cba6f7, #f5c2e7, #89b4fa);
+  border-radius: 4px;
+  transition: width 0.1s ease-out;
+  box-shadow: 0 0 15px rgba(203, 166, 247, 0.6);
+}
+
+.boot-progress-text {
+  font-size: 18px;
+  color: #94e2d5;
+  font-family: 'Fira Code', monospace;
+}
+
+.boot-stage-message {
+  font-size: 20px;
+  color: #a6adc8;
+  min-height: 28px;
+  animation: blink-cursor 1s step-end infinite;
+}
+
+.boot-stage-message::after {
+  content: '_';
+  animation: blink-cursor 0.8s step-end infinite;
+}
+
+@keyframes blink-cursor {
+  50% {
+    opacity: 0;
+  }
+}
+
+.boot-skip-hint {
+  position: absolute;
+  bottom: 80px;
+  font-size: 14px;
+  color: #6c7086;
+  animation: fade-hint 2s ease-in-out infinite;
+}
+
+@keyframes fade-hint {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.boot-footer {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #6c7086;
+}
+
+@media (max-width: 500px) {
+  .boot-logo-icon {
+    font-size: 48px;
+  }
+
+  .boot-title {
+    font-size: 36px;
+    letter-spacing: 4px;
+  }
+
+  .boot-progress-container {
+    width: 280px;
+  }
+}

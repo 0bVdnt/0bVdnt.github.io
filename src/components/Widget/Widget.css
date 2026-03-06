@@ -1,0 +1,136 @@
+.widget {
+    background: rgba(30, 30, 46, 0.92);
+    border: 2px solid #585b70;
+    border-radius: 14px;
+    padding: 18px;
+    backdrop-filter: blur(15px);
+    box-shadow:
+        0 10px 40px rgba(17, 17, 27, 0.4),
+        inset 0 1px 0 rgba(205, 214, 244, 0.08);
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 250px;
+    transition: all 0.3s ease;
+    scrollbar-width: thin;
+    scrollbar-color: #cba6f7 transparent;
+}
+
+.widget::-webkit-scrollbar {
+    width: 5px;
+}
+
+.widget::-webkit-scrollbar-thumb {
+    background: #cba6f7;
+    border-radius: 3px;
+}
+
+.widget::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+.widget:hover {
+    border-color: #cba6f7;
+    box-shadow:
+        0 12px 45px rgba(203, 166, 247, 0.2),
+        inset 0 1px 0 rgba(205, 214, 244, 0.12);
+    transform: translateY(-2px);
+}
+
+.widget h3 {
+    font-family: 'VT323', monospace;
+    font-size: 20px;
+    color: #b4befe;
+    margin: 0 0 12px 0;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 12px rgba(180, 190, 254, 0.5);
+}
+
+.widget h3::before {
+    content: "▶ ";
+    color: #f5c2e7;
+    margin-right: 6px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+}
+
+.widget p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #bac2de;
+    margin: 0;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget-list-stack li {
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(69, 71, 90, 0.6);
+    transition: all 0.2s ease;
+    font-size: 13px;
+    color: #a6adc8;
+}
+
+.widget-list-stack li:last-child {
+    border-bottom: none;
+}
+
+.widget-list-stack li:hover {
+    padding-left: 12px;
+    color: #74c7ec;
+}
+
+.widget-list-stack li::before {
+    content: "◆";
+    color: #94e2d5;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.widget-list-links li {
+    padding: 5px 0;
+}
+
+.widget-list-links a {
+    text-decoration: none;
+    color: #cdd6f4;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.widget-list-links a:hover {
+    color: #74c7ec;
+    text-shadow: 0 0 18px rgba(116, 199, 236, 0.6);
+    transform: translateX(6px);
+}
+
+.widget-list-links a::before {
+    content: "[ ";
+    color: #f5c2e7;
+}
+
+.widget-list-links a::after {
+    content: " ]";
+    color: #f5c2e7;
+}

@@ -1,0 +1,47 @@
+/* Blogs window styles */
+.blogs-directory {
+    font-family: inherit;
+}
+
+.blog-reader {
+    font-family: inherit;
+}
+
+.blog-content {
+    font-family: inherit;
+}
+
+.blog-content h1, .blog-content h2, .blog-content h3 {
+    color: inherit;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.blog-content p {
+    margin-bottom: 1em;
+}
+
+.blog-content ul, .blog-content ol {
+    margin-bottom: 1em;
+    padding-left: 2em;
+}
+
+.blog-content code {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+.blog-content pre {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 1em;
+}
+
+.blog-content pre code {
+    background: transparent;
+    padding: 0;
+}

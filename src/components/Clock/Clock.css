@@ -1,0 +1,8 @@
+.clock {
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    padding: 0 18px;
+    color: #a6e3a1;
+    text-shadow: 0 0 12px rgba(166, 227, 161, 0.6);
+    letter-spacing: 2px;
+}

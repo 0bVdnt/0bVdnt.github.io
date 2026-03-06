@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Fira+Code:wght@400;500&display=swap');
+
+:root {
+  /* Catppuccin Mocha Color Palette */
+  --cat-base: #1e1e2e;
+  --cat-mantle: #181825;
+  --cat-crust: #11111b;
+  --cat-surface0: #313244;
+  --cat-surface1: #45475a;
+  --cat-surface2: #585b70;
+  --cat-text: #cdd6f4;
+  --cat-subtext1: #bac2de;
+  --cat-subtext0: #a6adc8;
+  --cat-overlay2: #9399b2;
+  --cat-overlay1: #7f849c;
+  --cat-overlay0: #6c7086;
+  --cat-lavender: #b4befe;
+  --cat-blue: #89b4fa;
+  --cat-sapphire: #74c7ec;
+  --cat-sky: #89dceb;
+  --cat-teal: #94e2d5;
+  --cat-green: #a6e3a1;
+  --cat-yellow: #f9e2af;
+  --cat-peach: #fab387;
+  --cat-maroon: #eba0ac;
+  --cat-red: #f38ba8;
+  --cat-mauve: #cba6f7;
+  --cat-pink: #f5c2e7;
+  --cat-flamingo: #f2cdcd;
+  --cat-rosewater: #f5e0dc;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #cba6f7 #313244;
+}
+
+html {
+  font-family: 'Fira Code', monospace;
+  color: #cdd6f4;
+  font-size: 16px;
+}
+
+body {
+  background: linear-gradient(135deg, #11111b 0%, #1e1e2e 100%);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+/* Subtle grid background on body */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    linear-gradient(rgba(180, 190, 254, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(180, 190, 254, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Global link styles */
+a {
+  color: #74c7ec;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #89dceb;
+  text-shadow: 0 0 12px rgba(137, 220, 235, 0.5);
+}
+
+/* Focus visible */
+*:focus-visible {
+  outline: 2px solid #b4befe;
+  outline-offset: 2px;
+}
+
+/* Scrollbar styling */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #313244;
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #cba6f7, #f5c2e7);
+  border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #f5c2e7;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+}
